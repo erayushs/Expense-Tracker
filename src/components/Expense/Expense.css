@@ -27,6 +27,10 @@
   background: linear-gradient(90deg, #ff9595 0%, #ff4747 80%, #ff3838 100%);
 }
 
+.addExpense:hover {
+  cursor: pointer;
+}
+
 .expenseAmount {
   font-weight: 700px;
   color: #f4bb4a;

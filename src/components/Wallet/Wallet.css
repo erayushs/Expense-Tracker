@@ -28,6 +28,10 @@
   background: linear-gradient(90deg, #b5dc52 0%, #89e148 100%);
 }
 
+.addIncome:hover {
+  cursor: pointer;
+}
+
 .walletAmount {
   color: #9dff5b;
 }

@@ -3,15 +3,28 @@ import BarC from "./components/BarC";
 import Expense from "./components/Expense/Expense";
 import PieC from "./components/PieC";
 import Wallet from "./components/Wallet/Wallet";
+import { useState } from "react";
 
 const App = () => {
+  const [balance, setBalance] = useState(4000);
+  const [expense, SetExpense] = useState(0);
+
+  const handleAddExpense = (expenseAmount) => {
+    if (expenseAmount <= balance) {
+      setBalance(balance - expenseAmount);
+      SetExpense(expense + expenseAmount);
+    } else {
+      alert("Insufficient balance in wallet");
+    }
+  };
+
   return (
     <div className="App">
       {/* TOP DIV COMPLETE */}
       <h1>Expense Tracker</h1>
       <div className="topDiv">
-        <Wallet />
-        <Expense />
+        <Wallet balance={balance} />
+        <Expense expense={expense} onAddExpense={handleAddExpense} />
         <div className="pieBox">
           <PieC />
           {/* PIE CATEGORY COLOR BOXES */}
