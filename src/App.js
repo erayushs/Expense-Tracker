@@ -1,4 +1,5 @@
 import "./App.css";
+import BarC from "./components/BarC";
 import Expense from "./components/Expense/Expense";
 import PieC from "./components/PieC";
 import Wallet from "./components/Wallet/Wallet";
@@ -6,9 +7,8 @@ import Wallet from "./components/Wallet/Wallet";
 const App = () => {
   return (
     <div className="App">
-      <h1>Expense Tracker</h1>
-
       {/* TOP DIV COMPLETE */}
+      <h1>Expense Tracker</h1>
       <div className="topDiv">
         <Wallet />
         <Expense />
@@ -40,8 +40,20 @@ const App = () => {
           </div>
         </div>
       </div>
-
       {/* BOTTOM DIV COMPLETE */}
+      <div className="bottomDiv">
+        <div className="recentTransactionsDiv">
+          <h2 className="transactionHeading1">Recent Transactions</h2>
+          <div className="transactionsDiv"></div>
+        </div>
+
+        <div className="topExpensesDiv">
+          <h2 className="transactionHeading2">Top Expenses</h2>
+          <div className="expensesBarGraphDiv">
+            <BarC />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

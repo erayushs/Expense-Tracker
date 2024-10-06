@@ -1,6 +1,9 @@
 .App {
   color: white;
   margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
 }
 
 h1 {
@@ -64,4 +67,59 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* BOTTOM DIV CSS */
+.bottomDiv {
+  display: flex;
+  gap: 3rem;
+}
+
+.recentTransactionsDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.transactionHeading1 {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.transactionsDiv {
+  width: 760px;
+  height: 345px;
+  border: 1px 0px 0px 0px;
+  background-color: #ffffff;
+  border-radius: 15px;
+}
+
+.topExpensesDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.transactionHeading2 {
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.expensesBarGraphDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 550px;
+  height: 345px;
+  border: 1px 0px 0px 0px;
+
+  border-radius: 15px;
+  background-color: #ffffff;
 }

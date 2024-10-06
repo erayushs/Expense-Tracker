@@ -39,7 +39,7 @@ const renderCustomizedLabel = ({
 export default class PieC extends PureComponent {
   render() {
     return (
-      <PieChart width={400} height={199}>
+      <PieChart width={199} height={199}>
         <Pie
           data={data}
           cx="50%"
