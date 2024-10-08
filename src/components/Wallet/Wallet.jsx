@@ -1,6 +1,4 @@
-import { useState } from "react";
 import "./Wallet.css";
-import Expense from "../Expense/Expense";
 
 const Wallet = ({ balance }) => {
   return (
