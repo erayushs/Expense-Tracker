@@ -1,0 +1,64 @@
+/* Default styles (PC/Desktop) */
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Mobile devices (up to 600px) */
+/* @media (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+    
+    .container {
+        padding: 10px;
+    }
+
+    .header, .footer {
+        text-align: center;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+    }
+} */
+
+/* Tablets (600px to 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  button {
+    width: 50%;
+  }
+}
+
+/* Desktop (1024px and above) */
+@media (min-width: 1025px) {
+  .container {
+    padding: 30px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  button {
+    width: auto;
+  }
+}

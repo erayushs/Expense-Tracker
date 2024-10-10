@@ -1,13 +1,7 @@
 import React, { PureComponent } from "react";
 import { PieChart, Pie, Cell } from "recharts";
 
-const data = [
-  { name: "Group A", value: 4500 },
-  { name: "Group B", value: 1500 },
-  { name: "Group C", value: 500 },
-];
-
-const COLORS = ["#FF9304", "#A000FF", "#FDE006"];
+const COLORS = ["#A000FF", "#FF9304", "#FDE006"];
 
 const RADIAN = Math.PI / 180;
 
@@ -37,7 +31,14 @@ const renderCustomizedLabel = ({
 };
 
 export default class PieC extends PureComponent {
+  constructor(props) {
+    super(props);
+
+    console.log(this.props.data);
+  }
+
   render() {
+    const data = this.props.data;
     return (
       <PieChart width={199} height={199}>
         <Pie

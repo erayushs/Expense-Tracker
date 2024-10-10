@@ -9,9 +9,9 @@ import {
 } from "recharts";
 
 const defaultData = [
-  { name: "Entertainment", value: 4000 },
-  { name: "Food", value: 2500 },
-  { name: "Travel", value: 1500 },
+  { name: "Entertainment", value: 0 },
+  { name: "Food", value: 0 },
+  { name: "Travel", value: 0 },
 ];
 
 export default class CustomBarChart extends PureComponent {
