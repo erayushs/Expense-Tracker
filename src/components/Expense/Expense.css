@@ -1,5 +1,4 @@
 .expensesDiv {
-  width: 355.41px;
   height: 181px;
   border-radius: 15px;
   background: #9b9b9b;
@@ -14,6 +13,8 @@
 .expenseh1 {
   font-size: 30px;
   margin-top: 20px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .addExpense {

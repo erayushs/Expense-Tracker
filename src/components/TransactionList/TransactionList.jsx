@@ -45,7 +45,7 @@ const TransactionList = ({
   }, [totalPages]);
 
   return (
-    <div>
+    <>
       {expenseList.length > 0 ? (
         <div>
           {currentTransactions.map((transaction) => (
@@ -67,7 +67,7 @@ const TransactionList = ({
         </div>
       ) : (
         <div>
-          <p>No expenseList!</p>
+          <p>No expenses!</p>
         </div>
       )}
 
@@ -81,7 +81,7 @@ const TransactionList = ({
           setBalance={setBalance}
         />
       </Modal>
-    </div>
+    </>
   );
 };
 

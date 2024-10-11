@@ -9,27 +9,19 @@
 h1 {
   width: 251px;
   height: 37px;
-  top: 48px;
-  left: 32px;
-  gap: 0px;
-  opacity: 0px;
   margin-bottom: 8px;
   margin-left: 2px;
+  margin-top: 0;
 }
 
 .topDiv {
-  /* width: 1211px; */
-  height: 269px;
-  /* top: 94px; */
-  left: 32px;
-  gap: 0px;
   border-radius: 10px;
-  opacity: 0px;
   background: #626262;
   box-shadow: 0px 4px 4px 0px #00000040;
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  padding: 48px;
 }
 
 .pieBox {
@@ -71,8 +63,10 @@ h1 {
 
 /* BOTTOM DIV CSS */
 .bottomDiv {
-  display: flex;
-  gap: 3rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin: 0;
 }
 
 .recentTransactionsDiv {
@@ -90,7 +84,6 @@ h1 {
 }
 
 .transactionsDiv {
-  width: 760px;
   height: 345px;
   border: 1px 0px 0px 0px;
   background-color: #ffffff;
@@ -117,10 +110,48 @@ h1 {
   justify-content: center;
   align-items: center;
 
-  width: 550px;
   height: 345px;
-  border: 1px 0px 0px 0px;
 
   border-radius: 15px;
   background-color: #ffffff;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .topDiv {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bottomDiv {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .transactionsDiv {
+    height: 400px;
+  }
+}
+
+@media (max-width: 600px) {
+  .topDiv {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .bottomDiv {
+    padding: 16px;
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .transactionsDiv {
+    height: 400px;
+  }
+
+  .expensesBarGraphDiv {
+    height: 300px;
+  }
 }
